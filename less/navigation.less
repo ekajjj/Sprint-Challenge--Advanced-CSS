@@ -8,6 +8,14 @@
 
 }
 
+@keyframes fade-in{
+    from {opacity: .2;}
+    to {opacity: 1;}
+  
+  }
+
+
+// Sliding animation, not visually appealing
 @keyframes slidein {
     from {
       margin-left: 100%;
@@ -19,7 +27,7 @@
     }
   }
 nav {     
-    animation-name: slidein;
+    animation-name: fade-in;
     animation-duration: 3s;
 
     // Testing fixed nav

@@ -181,6 +181,14 @@ p {
     background-color: #F6F6F6;
   }
 }
+@keyframes fade-in {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -190,7 +198,7 @@ p {
   }
 }
 nav {
-  animation-name: slidein;
+  animation-name: fade-in;
   animation-duration: 3s;
   /*position: fixed;
     width: 100%;
