@@ -29,7 +29,8 @@
 nav {     
     animation-name: fade-in;
     animation-duration: 3s;
-
+    display: flex;
+    align-items: center;
     // Testing fixed nav
     /*position: fixed;
     width: 100%;
@@ -72,10 +73,15 @@ nav {
 
     @media @phone {
         align-items: center;
-        width: 500px;
-
+        justify-content: center;
+        display: flex;
+        nav {
+            justify-content: center;
+            width: 100%;
+        }
         img {
             width: 500px;
+            
         }
       }
 }

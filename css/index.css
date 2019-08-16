@@ -236,7 +236,12 @@ nav img {
 @media (max-width: 500px) {
   nav {
     align-items: center;
-    width: 500px;
+    justify-content: center;
+    display: flex;
+  }
+  nav nav {
+    justify-content: center;
+    width: 100%;
   }
   nav img {
     width: 500px;
