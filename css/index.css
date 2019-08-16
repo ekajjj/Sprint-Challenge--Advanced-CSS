@@ -1,3 +1,14 @@
+.h1_mixin {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 4rem;
+}
+.nav_mixin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.6rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -136,6 +147,7 @@ html,
 body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
+  font-weight: bold;
 }
 h1,
 h2,
@@ -164,15 +176,23 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  word-spacing: 20px;
   font-size: 1.6rem;
 }
 nav h1 {
   padding-top: 20px;
+  padding-bottom: 10px;
   font-size: 4rem;
 }
 nav .nav_items {
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+nav .nav_items .unique_nav {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 nav img {
   border-radius: 5px;
