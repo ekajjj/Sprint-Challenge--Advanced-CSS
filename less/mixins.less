@@ -1,1 +1,28 @@
 // Mixins Here
+
+.h1_mixin {
+padding-top: 20px;
+padding-bottom: 10px;
+font-size: 4rem;
+}
+
+.nav_mixin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem; 
+}
+
+// Parametric mix-ins
+
+.custom_display(@justify, @align, @direction){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @direction;
+}
+
+.make_button(@bg, @color){
+    background: @bg;
+    color: @color;
+}

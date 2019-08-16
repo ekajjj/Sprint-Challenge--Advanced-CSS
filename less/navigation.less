@@ -1,1 +1,87 @@
 // Navigation code here
+
+// Testing animation
+@keyframes test-animation{
+    from {background-color: @ebony-clay;
+    border-radius: 10px;}
+    to {background-color: @wild-sand;}
+
+}
+
+@keyframes fade-in{
+    from {opacity: .2;}
+    to {opacity: 1;}
+  
+  }
+
+
+// Sliding animation, not visually appealing
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+    
+    }
+  }
+nav {     
+    animation-name: fade-in;
+    animation-duration: 3s;
+    display: flex;
+    align-items: center;
+    // Testing fixed nav
+    /*position: fixed;
+    width: 100%;
+    z-index: 1;
+    background: grey;
+    */
+    
+    
+    a {
+        text-decoration: none;
+        color: @main-font-color;
+    }
+    .nav_mixin();  
+   
+    h1 {
+        .h1_mixin();
+    // animation-name: test-animation;
+    //animation-duration: 4s;
+    }
+
+    .nav_items {
+    //animation-name: test-animation;
+    //animation-duration: 4s;
+
+    padding: 10px;
+
+    // parametric mix in
+        .custom_display(space-between, center, row);        
+
+        .unique_nav {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    
+
+    img {
+        border-radius: 5px;
+    }
+
+    @media @phone {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        nav {
+            justify-content: center;
+            width: 100%;
+        }
+        img {
+            width: 500px;
+            
+        }
+      }
+}
