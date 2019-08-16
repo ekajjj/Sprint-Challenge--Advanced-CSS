@@ -1,8 +1,27 @@
 // Navigation code here
 
-nav {
+// Testing animation
+@keyframes test-animation{
+    from {background-color: @ebony-clay;
+    border-radius: 10px;}
+    to {background-color: @wild-sand;}
 
+}
 
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+    
+    }
+  }
+nav {     
+        animation-name: slidein;
+        animation-duration: 5s;
+    
     a {
         text-decoration: none;
         color: @main-font-color;
@@ -11,12 +30,17 @@ nav {
    
     h1 {
         .h1_mixin();
+    // animation-name: test-animation;
+    //animation-duration: 4s;
     }
 
     .nav_items {
-        padding: 10px;
+    //animation-name: test-animation;
+    //animation-duration: 4s;
 
-        // parametric mix in
+    padding: 10px;
+
+    // parametric mix in
         .custom_display(space-between, center, row);        
 
         .unique_nav {
