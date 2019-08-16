@@ -1,7 +1,8 @@
 // Navigation code here
 
 nav {
-    
+
+
     a {
         text-decoration: none;
         color: @main-font-color;
@@ -29,5 +30,12 @@ nav {
         border-radius: 5px;
     }
 
-    
+    @media @mobile {
+        align-items: center;
+        width: 500px;
+
+        img {
+            width: 500px;
+        }
+      }
 }

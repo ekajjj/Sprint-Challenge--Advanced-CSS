@@ -201,6 +201,15 @@ nav .nav_items .unique_nav {
 nav img {
   border-radius: 5px;
 }
+@media (max-width: 500px) {
+  nav {
+    align-items: center;
+    width: 500px;
+  }
+  nav img {
+    width: 500px;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -217,6 +226,12 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+@media (max-width: 500px) {
+  .home .intro {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
@@ -228,6 +243,22 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .home .space-images img {
+    width: 100%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
@@ -236,6 +267,13 @@ footer {
 }
 .home .visit-planets p {
   margin-top: 13px;
+}
+@media (max-width: 500px) {
+  .home .visit-planets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .home .walk {
   margin-top: 60px;
@@ -263,16 +301,44 @@ footer {
   display: flex;
   border-radius: 5px;
 }
-.home .walk .walk-text .btn:hover {
+.home .walk .walk-text .btn .btn:hover {
   background: #81848E;
-  color: #F1F1F1;
+  color: black;
 }
-.home .walk .walk-img {
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    display: flex;
+    margin: 20px;
+  }
+}
+.home .walk .walk-text .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
+.home .walk .walk-text .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .home .walk .walk-img {
+    order: 1;
+    margin: 10px;
+    width: 100%;
+  }
+  .home .walk .walk-text {
+    order: 2;
+    width: 100%;
+    justify-content: center;
+  }
+  .home .walk .btn {
+    order: 3;
+    align-items: center;
+  }
 }
