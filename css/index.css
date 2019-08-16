@@ -191,7 +191,7 @@ p {
 }
 nav {
   animation-name: slidein;
-  animation-duration: 5s;
+  animation-duration: 3s;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -238,6 +238,18 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    oapcity: 1;
+  }
+}
+.home {
+  animation-name: fade-in;
+  animation-duration: 5s;
 }
 .home .intro h2 {
   padding: 15px;
@@ -320,16 +332,16 @@ footer {
   display: flex;
   border-radius: 5px;
 }
-.home .walk .walk-text .btn .btn:hover {
-  background: #81848E;
-  color: black;
-}
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     width: 100%;
     display: flex;
     margin: 20px;
   }
+}
+.home .walk .walk-text .btn:hover {
+  background: gray;
+  color: black;
 }
 .home .walk .walk-text .walk-img {
   width: 46%;

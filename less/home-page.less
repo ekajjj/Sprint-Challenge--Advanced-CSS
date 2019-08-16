@@ -1,7 +1,14 @@
 // Home Content
 
+@keyframes fade-in{
+  from {opacity: .2;}
+  to {oapcity: 1;}
+
+}
+
 .home {
-  
+  animation-name: fade-in;
+  animation-duration: 5s;
 
   .intro {
 
@@ -98,10 +105,6 @@
         display: flex;
         border-radius: 5px;
          
-        .btn:hover{
-          background: @waterloo;
-          color: black;
-          }
 
           @media @mobile {
             width: 100%;
@@ -109,6 +112,10 @@
             margin: 20px;
           }
     }
+
+    .btn:hover{
+      .make_button(gray, black);
+      }
 
     .walk-img {
       width: 46%;
